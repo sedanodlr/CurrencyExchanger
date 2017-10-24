@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sedano.com.currencyexchanger.view.calculator.CalculatorActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="@string/enter_amount_to_convert"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+
+        <EditText
+            android:id="@+id/etBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingEnd="16sp"
+            android:paddingRight="16sp"
+            android:textSize="18sp"
+            tools:text="THIS" />
+
+        <TextView
+            android:id="@+id/tvBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            tools:text="USD" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlExchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlBase"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp">
+
+        <EditText
+            android:id="@+id/etExchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingEnd="16sp"
+            android:paddingRight="16sp"
+            android:textSize="18sp"
+            tools:text="THAT" />
+
+        <TextView
+            android:id="@+id/tvExchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            tools:text="AUD" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Exchanger</string>
+    <string name="select_base_currency">Select base currency for conversion</string>
+    <string name="error_loading_list">There was an error loading the exchange rates</string>
+    <string name="ok">Ok</string>
+    <string name="error_loading_calculator_data">There was an error loading the exchange screen</string>
+    <string name="enter_amount_to_convert">Enter the amount you want to convert</string>
+</resources>
