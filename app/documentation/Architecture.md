@@ -3,7 +3,9 @@
 This sample app adapts the MVP architecture, very used in Android development, in which we separate the app in three layers:
 
 *Model* - Referring to the data
+
 *View* - Referring on what the user sees
+
 *Presenter* - Referring on how to show the data to the user through the view
 
 On top of that, I've used **Dagger2** as dependency injection system, **RxAndroid** for asynchronous operations, on top of **Retrofit2** for the network calls. 
